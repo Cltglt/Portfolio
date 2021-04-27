@@ -7491,7 +7491,7 @@ nav {
 .wiggleC {
   animation: 5s ease-in-out infinite wiggleC; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   nav a {
     padding: 35px 15px; }
   nav svg {
