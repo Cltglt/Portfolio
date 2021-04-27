@@ -1,0 +1,58 @@
+nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    right: 0px;
+    top: 50%;
+    height: 60%;
+    transform: translate(0, -50%);
+    z-index: 2;
+    & a{
+        padding: 25px 5px;
+        transition-duration: 0.3s;
+        transition-property:padding ;
+        animation: 3s ease-in-out 0s apparitonrightleft;
+    }
+    & svg{
+        width: 30px;
+        height: 30px;
+    }
+    & path{
+        fill:$primary;
+    }
+    & a:hover {
+        padding: 35px 10px;
+    }
+    & a:active {
+        padding: 35px 10px;
+    }
+}
+.wiggleA{
+    animation: 5s ease-in-out infinite wiggleA;
+}
+.wiggleB{
+    animation: 5s ease-in-out infinite wiggleB;
+}
+.wiggleC{
+    animation: 5s ease-in-out infinite wiggleC;
+}
+// ____________________MEDIA SCREEN 1024px___________________
+@media screen and (min-width:1024px){
+    nav{
+        & a{
+            padding: 35px 15px;
+        }
+        & svg{
+            width: 40px;
+            height: 40px;
+        }
+        & a:hover {
+            padding: 45px 20px;
+        }
+        & a:active {
+            padding: 45px 20px;
+        }
+    }
+}

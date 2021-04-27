@@ -1,0 +1,124 @@
+/* -------------------------ANIM-WIGGLE----------------------- */
+@keyframes wiggleA {
+    0% {
+    transform: rotate(-10deg);
+    }
+    2% {
+        transform: rotate(10deg);
+    }
+    4% {
+        transform: rotate(-10deg);
+    }
+    6% {
+        transform: rotate(10deg);
+    }
+    8% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes wiggleB {
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0deg);
+        }
+    27% {
+        transform: rotate(10deg);
+    }
+    29% {
+        transform: rotate(-10deg);
+    }
+    31% {
+        transform: rotate(10deg);
+    }
+    33% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes wiggleC {
+    0% {
+    transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        }
+    52% {
+        transform: rotate(10deg);
+    }
+    54% {
+        transform: rotate(-10deg);
+    }
+    56% {
+        transform: rotate(10deg);
+    }
+    58% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes wiggleD {
+    0% {
+    transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(0deg);
+        }
+    77% {
+        transform: rotate(10deg);
+    }
+    79% {
+        transform: rotate(-10deg);
+    }
+    81% {
+        transform: rotate(10deg);
+    }
+    83% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* -------------------------ANIM-APPARITION----------------------- */
+@keyframes apparition {
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 0%;
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 100%;
+        filter: blur(0px);
+    }
+}
+@keyframes apparitonrightleft {
+    0%{
+        transform: translate(200%,0%);
+    }
+    35%{
+        transform: translate(0%,0%);
+    }
+    50%{
+        transform: translate(5%,0%);
+    }
+    65%{
+        transform: translate(0%,0%);
+    }
+    80%{
+        transform: translate(1%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
