@@ -2,11 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Clément Gallet - Web Developpeur - HTML/CSS/SCSS/JS/MYSQL. En cours de formation, activement à la recherche d'un stage.">
+
+    <link rel="icon" type="image/png" href="faviconCode.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <title>CltGlt - Developpeur Web/Application</title>
 </head>
 <body>
-    
+<!-- ____________________VIDEO___________________ -->
+    <video autoplay muted loop>
+        <source src="video/videoBack.mp4" type="video/mp4">
+    </video>
+
+    <span class="logoDev">CltGlt
+        WebDev
+    </span>
+<!-- ____________________NAV___________________ -->
+    <nav class="NavSvg">
+        <a href="#webdev">
+            <svg class="NavHome wiggleA" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" >
+                <path d="M13,18h-2v-2h2V18z M15,14H9v6h6V14L15,14z M19,9.3L19,9.3V4h-3v2.6v0L12,3L2,12h3l7-6.31L19,12h3L19,9.3z"/>
+            </svg>
+        </a>
+        <a href="#projets">
+            <svg class="NavHome wiggleB" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+            </svg>
+        </a>
+        <a href="#contact">
+            <svg class="NavHome wiggleC" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" >
+                <path d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+            </svg>
+        </a>
+    </nav>
+<!-- ____________________contenu___________________ -->
+    <main class="page mandatory-scroll-snapping">
+<!-- ____________________SecOne___________________ -->
+        <section class="SecOne mandatory-scroll-snapping" id="webdev">
+            <div class="SecOne__box">
+                <h1 class="SecOne__box__title">CltGlt - WEB DEVELOPPEUR</h1>
+                <p class="SecOne__box__desc">Actuellement en formation <em>@POPSCHOOL Lens.
+                    Titre de professionnalisation Web développeur/Web Mobile</em> en cours d’aquisition.</p>
+            </div>
+        </section>
+<!-- ____________________SecTwo___________________ -->
+        <section class="SecTwo mandatory-scroll-snapping" id="projets">
+            <div class="SecTwo__box">
+                <h2 class="SecTwo__box__title">MES TRAVAUX</h2>
+                <div class="SecTwo__box__Work">
+
+                    <div class="SecTwo__box__Work__card " >
+                        <a href="https://le-domaine-d-alvaro.netlify.app" class="SecTwo__box__Work__card__link ledomaine">
+                            Le domaine d'Alvaro, écurie active
+                        </a>
+                    </div>
+                    <div class="SecTwo__box__Work__card" >
+                        <a href="https://themewp-showtrack.netlify.app" class="SecTwo__box__Work__card__link showtrack">
+                            Refonte d'un thème Wordpress
+                        </a>
+                    </div>
+                    <div class="SecTwo__box__Work__card" >
+                        <a href="https://chucknorris-generator.netlify.app" class="SecTwo__box__Work__card__link chucknorris">
+                            Générateur de phrase
+                        </a>
+                    </div>
+                    <div class="SecTwo__box__Work__card" >
+                        <a href="https://tp-calculatrice-js.netlify.app" class="SecTwo__box__Work__card__link calculatrice">
+                            TP Calculatrice en JS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- ____________________SecThree___________________ -->
+        <section class="SecThree mandatory-scroll-snapping" id="contact">
+            <div class="SecThree__box">
+                <h3 class="SecThree__box__title">CONTACTEZ-MOI</h3>
+                <div class="mb-3">
+                    <label for="Nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="Nom" placeholder="Nom">
+                    <label for="Prenom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="Prenom" placeholder="Prénom">
+                    <label for="Mail" class="form-label">Adresse E-mail</label>
+                    <input type="email" class="form-control" id="Mail" placeholder="adresse@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Laissez-moi un message ! :)</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
