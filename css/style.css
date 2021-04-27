@@ -1,0 +1,345 @@
+/** Required Bootstrap **/
+/* -------------------------ANIM-WIGGLE----------------------- */
+@keyframes wiggleA {
+  0% {
+    transform: rotate(-10deg); }
+  2% {
+    transform: rotate(10deg); }
+  4% {
+    transform: rotate(-10deg); }
+  6% {
+    transform: rotate(10deg); }
+  8% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes wiggleB {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(0deg); }
+  27% {
+    transform: rotate(10deg); }
+  29% {
+    transform: rotate(-10deg); }
+  31% {
+    transform: rotate(10deg); }
+  33% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes wiggleC {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(0deg); }
+  52% {
+    transform: rotate(10deg); }
+  54% {
+    transform: rotate(-10deg); }
+  56% {
+    transform: rotate(10deg); }
+  58% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes wiggleD {
+  0% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(0deg); }
+  77% {
+    transform: rotate(10deg); }
+  79% {
+    transform: rotate(-10deg); }
+  81% {
+    transform: rotate(10deg); }
+  83% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+/* -------------------------ANIM-APPARITION----------------------- */
+@keyframes apparition {
+  0% {
+    opacity: 0%; }
+  20% {
+    opacity: 0%;
+    filter: blur(5px); }
+  100% {
+    opacity: 100%;
+    filter: blur(0px); } }
+
+@keyframes apparitonrightleft {
+  0% {
+    transform: translate(200%, 0%); }
+  35% {
+    transform: translate(0%, 0%); }
+  50% {
+    transform: translate(5%, 0%); }
+  65% {
+    transform: translate(0%, 0%); }
+  80% {
+    transform: translate(1%, 0%); }
+  100% {
+    transform: translate(0%, 0%); } }
+
+/** base **/
+html,
+body {
+  margin: 0; }
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.logoDev {
+  color: #c8c8c8;
+  font-size: 0.8em;
+  text-align: right;
+  z-index: 10;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-family: "Amiko", sans-serif;
+  line-height: 0.8em;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 5px black;
+  animation: 1s ease-in-out 0s apparition;
+  white-space: pre; }
+
+.page {
+  display: flex;
+  flex-wrap: wrap; }
+
+.SecOne {
+  z-index: 1;
+  display: block;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto; }
+  .SecOne__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .SecOne__box__title {
+      font-size: 3.5em;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #c8c8c8;
+      line-height: 2rem;
+      font-family: "Barlow Condensed", sans-serif;
+      transform: skewY(-8deg);
+      margin: 0;
+      display: block;
+      animation: 1s ease-in-out 0s apparition; }
+    .SecOne__box__desc {
+      font-size: 1em;
+      color: #c8c8c8;
+      font-family: "Amiko", sans-serif;
+      line-height: 2.5em;
+      padding-bottom: 80px;
+      margin: 0;
+      width: 100%;
+      animation: 3s ease-in-out 0s apparitonrightleft; }
+
+.SecTwo {
+  z-index: 1;
+  display: block;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto; }
+  .SecTwo__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .SecTwo__box__title {
+      font-size: 3.5em;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #c8c8c8;
+      line-height: 1.5rem;
+      font-family: "Barlow Condensed", sans-serif;
+      transform: skewY(-8deg);
+      margin: 0;
+      display: block;
+      animation: 1s ease-in-out 0s apparition; }
+    .SecTwo__box__Work {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 70%;
+      margin: 0;
+      padding: 0;
+      animation: 3s ease-in-out 0s apparitonrightleft; }
+      .SecTwo__box__Work__card {
+        margin: 10px;
+        width: 100%;
+        height: 20%;
+        box-shadow: 0px 0px 20px black; }
+        .SecTwo__box__Work__card__link {
+          width: 100%;
+          height: 100%;
+          display: block;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Barlow Condensed", sans-serif;
+          color: #c8c8c8;
+          font-size: 16px;
+          text-shadow: 0px 0px 10px black;
+          transition-duration: 0.5s; }
+          .SecTwo__box__Work__card__link:hover {
+            letter-spacing: 1px;
+            color: #310b6f;
+            text-decoration: none; }
+          .SecTwo__box__Work__card__link:active {
+            letter-spacing: 1px;
+            color: #310b6f;
+            text-decoration: none; }
+
+.ledomaine {
+  background-image: url(img/ledomainedalvaro.png);
+  background-position: center center;
+  background-size: cover; }
+
+.showtrack {
+  background-image: url(img/showtrack.png);
+  background-position: center center;
+  background-size: cover; }
+
+.chucknorris {
+  background-image: url(img/chucknorrisfact.png);
+  background-position: center center;
+  background-size: cover; }
+
+.calculatrice {
+  background-image: url(img/calculatrice.png);
+  background-position: center center;
+  background-size: cover; }
+
+.SecThree {
+  z-index: 1;
+  display: block;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto; }
+  .SecThree__box {
+    width: 100%;
+    height: 100%; }
+    .SecThree__box__title {
+      font-size: 3.5em;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #c8c8c8;
+      line-height: 1.5rem;
+      font-family: "Barlow Condensed", sans-serif;
+      transform: skewY(-8deg);
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      display: block;
+      animation: 1s ease-in-out 0s apparition; }
+    .SecThree__box label {
+      color: #c8c8c8;
+      font-family: "Amiko", sans-serif;
+      animation: 3s ease-in-out 0s apparitonrightleft; }
+    .SecThree__box input {
+      font-family: "Amiko", sans-serif;
+      animation: 3s ease-in-out 0s apparitonrightleft; }
+    .SecThree__box textarea {
+      font-family: "Amiko", sans-serif;
+      animation: 3s ease-in-out 0s apparitonrightleft; }
+
+@media screen and (min-width: 992px) {
+  .logoDev {
+    font-size: 1.2em;
+    line-height: 0.6em; }
+  .SecOne {
+    width: 60vw; }
+    .SecOne__box__title {
+      font-size: 4.2em; }
+    .SecOne__box__desc {
+      font-size: 1.2em; }
+  .SecTwo {
+    width: 90vw; }
+    .SecTwo__box__title {
+      font-size: 4.2em; }
+    .SecTwo__box__Work {
+      justify-content: space-between;
+      flex-direction: column; }
+      .SecTwo__box__Work__card {
+        width: 22%;
+        height: 100%;
+        text-align: center; }
+        .SecTwo__box__Work__card__link {
+          font-size: 20px; }
+  .SecThree {
+    width: 50vw; }
+    .SecThree__box__title {
+      font-size: 4.2em; } }
+
+/** Layouts **/
+nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  right: 0px;
+  top: 50%;
+  height: 60%;
+  transform: translate(0, -50%);
+  z-index: 2; }
+  nav a {
+    padding: 25px 5px;
+    transition-duration: 0.3s;
+    transition-property: padding;
+    animation: 3s ease-in-out 0s apparitonrightleft; }
+  nav svg {
+    width: 30px;
+    height: 30px; }
+  nav path {
+    fill: #c8c8c8; }
+  nav a:hover {
+    padding: 35px 10px; }
+  nav a:active {
+    padding: 35px 10px; }
+
+.wiggleA {
+  animation: 5s ease-in-out infinite wiggleA; }
+
+.wiggleB {
+  animation: 5s ease-in-out infinite wiggleB; }
+
+.wiggleC {
+  animation: 5s ease-in-out infinite wiggleC; }
+
+@media screen and (min-width: 1024px) {
+  nav a {
+    padding: 35px 15px; }
+  nav svg {
+    width: 40px;
+    height: 40px; }
+  nav a:hover {
+    padding: 45px 20px; }
+  nav a:active {
+    padding: 45px 20px; } }
